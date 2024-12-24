@@ -52,16 +52,16 @@ export default defineUserConfig({
    //   }),
   //   downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
  //   },从这里结束注释
+    //{
+    //  mountPath: "/gitee",
+    //  analysis: giteeReleasesFilesAnalysis({
+    //    user: "yuze_gengyu",
+    //    repository: "software",
+    //    direction: "desc"
+    //  })
+  // },
     {
-      mountPath: "/gitee",
-      analysis: giteeReleasesFilesAnalysis({
-        user: "yuze_gengyu",
-        repository: "software",
-        direction: "desc"
-      })
-    },
-    {
-      mountPath: "/gitee/实用工具",
+      mountPath: "/gitee/软件仓库",
       analysis: giteeReposAnalysis({
         user: "yuze_gengyu",
         repository: "software"
