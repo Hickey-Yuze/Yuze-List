@@ -61,7 +61,7 @@ export default defineUserConfig({
     //  })
   // },
     {
-      mountPath: "/",
+      mountPath: "",
       analysis: giteeReposAnalysis({
         user: "yuze_gengyu",
         repository: "software"
